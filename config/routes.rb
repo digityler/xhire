@@ -1,8 +1,8 @@
 Xhire::Application.routes.draw do
   root 'static#home'
-  match '/help',    to: 'static_pages#help',    via: 'get'
-  match '/about',   to: 'static_pages#about',   via: 'get'
-  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/help',    to: 'static#help',    via: 'get'
+  match '/about',   to: 'static#about',   via: 'get'
+  match '/contact', to: 'static#contact', via: 'get'
   match '/signup',   to: 'users#new',            via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
